@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="bg-yellow py-40 md:pt-60 md:pb-24">
+    <div className="bg-yellow py-40 md:pb-24">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-24">
           <h1 className="block text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">

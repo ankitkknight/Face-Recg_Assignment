@@ -17,3 +17,31 @@ latest in cloud computing and machine learning advancements for a seamless user 
 - face-api.js
 - tailwindcss & @headlessui/react
 
+## Installation
+
+1. Clone the repository:
+
+```bash
+   git clone https://github.com/ankitkknight/Face-Recg_Assignment.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+  cd ./react-face-auth
+```
+
+3. Install the dependencies:
+
+```bash
+  npm install
+```
+
+4. Start the application:
+
+```bash
+  npm run dev
+```
+
+The application will be running at http://127.0.0.1:5173/.
+

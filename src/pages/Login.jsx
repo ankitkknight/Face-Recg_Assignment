@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as faceapi from "face-api.js";
-import AuthIdle from "../assets/images/auth-idle.svg";
-import AuthFace from "../assets/images/auth-face.svg";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
 
 function Login() {
@@ -36,9 +34,6 @@ function Login() {
   };
 
   useEffect(() => {
-    setTempAccount(location?.state?.account);
-  }, []);
-  useEffect(() => {
     if (tempAccount) {
       loadModels()
         .then(async () => {
@@ -48,6 +43,10 @@ function Login() {
         .then(() => setModelsLoaded(true));
     }
   }, [tempAccount]);
+
+  useEffect(() => {
+    setTempAccount(location?.state?.account);
+  }, []);
 
   useEffect(() => {
     if (loginResult === "SUCCESS") {
